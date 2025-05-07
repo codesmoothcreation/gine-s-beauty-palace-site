@@ -41,6 +41,8 @@
             e.preventDefault();
             const formData = new FormData(this);
 
+                formData.append('api_key', '118c4b6d1d6013b03e336243e46a5640');
+
             fetch('https://formsubmit.co/ajax/118c4b6d1d6013b03e336243e46a5640', {
                 method: 'POST',
                 body: formData,
