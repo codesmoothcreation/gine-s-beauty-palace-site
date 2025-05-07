@@ -36,14 +36,10 @@
         
         // Form submission
         document.getElementById('appointmentForm').addEventListener('submit', function(e) {
-            
-            // copilot generated using An api key
             e.preventDefault();
             const formData = new FormData(this);
 
-                formData.append('api_key', '118c4b6d1d6013b03e336243e46a5640');
-
-            fetch('https://formsubmit.co/ajax/118c4b6d1d6013b03e336243e46a5640', {
+            fetch('https://formsubmit.co/ajax/blackweb914@gmail.com', {
                 method: 'POST',
                 body: formData,
                 headers: {
@@ -62,9 +58,7 @@
                 console.error('Error:', error);
                 alert('There was an error sending your request. Please try again later.');
             });
-            
 
-            // We'll just show an alert
             alert('Thank you for your appointment request, ' + document.getElementById('name').value + 
                   '! We will contact you shortly to confirm your booking for ' + 
                   document.getElementById('service').value + '.');
