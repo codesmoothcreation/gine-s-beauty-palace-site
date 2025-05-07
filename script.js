@@ -41,7 +41,7 @@
             e.preventDefault();
             const formData = new FormData(this);
 
-            fetch('https://formsubmit.co/ajax/blackweb914@gmail.com', {
+            fetch('https://formsubmit.co/ajax/118c4b6d1d6013b03e336243e46a5640', {
                 method: 'POST',
                 body: formData,
                 headers: {
